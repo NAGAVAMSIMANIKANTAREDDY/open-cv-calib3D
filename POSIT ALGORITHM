@@ -1,0 +1,16 @@
+CvPOSITObject* cvCreatePOSITObject(
+                                    CvPoint3D32f* points,
+                                    int point_count
+                                   );  
+void cvReleasePOSITObject(
+                          CvPOSITObject** posit_object
+                          ); 
+                         
+void cvPOSIT(
+              CvPOSITObject* posit_object,
+              CvPoint2D32f* image_points,
+              double focal_length,
+              CvTermCriteria criteria,
+              float* rotation_matrix,
+              float* translation_vector
+             );
